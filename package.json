@@ -10,8 +10,9 @@
     "preview": "vite preview",
     "server": "cd server && node index.js",
     "server:dev": "cd server && node --watch index.js",
-    "start": "npm run build && cross-env NODE_ENV=production node server/index.js",
-    "start:prod": "cross-env NODE_ENV=production node server/index.js"
+    "start": "node start.js",
+    "start:prod": "cross-env NODE_ENV=production node server/index.js",
+    "production": "npm run build && npm run start:prod"
   },
   "dependencies": {
     "react": "^18.3.1",
